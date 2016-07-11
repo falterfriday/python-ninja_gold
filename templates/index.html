@@ -36,30 +36,28 @@ Description: Never Stop Learning
 				<input type="submit" name="farm_gold" value="Find Gold!">
 			</form>
 		</div>
-		
-
-
-
-
-
 		<div class="box">
 			Cave<br>
 			(earns 5-10 golds)
-			<form action="/process_money">
+			<form action="/process_money" method="post">
 				<input type="submit" name="cave_gold" value="Find Gold!">
 			</form>
 		</div>
+
+
+
+
 		<div class="box">
 			House<br>
 			(earns 2-5 golds)
-			<form action="/process_money">
+			<form action="/process_money" method="post">
 				<input type="submit" name="house_gold" value="Find Gold!">
 			</form>
 		</div>
 		<div class="box">
 			Casino<br>
 			(earns/takes 0-50 golds)
-			<form action="/process_money">
+			<form method="post" action="/process_money" >
 				<input type="submit" name="casino_gold" value="Find Gold!">
 			</form>
 		</div>
