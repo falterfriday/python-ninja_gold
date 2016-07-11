@@ -25,38 +25,47 @@ Description: Never Stop Learning
 </head>
 <body>
 <div class="wrapper">
-		Your Gold:<span>{{ gold }}</span><br>
+		Your Gold: <span>{{ gold }}</span><br>
+		
+
+
 		<div class="box">
 			Farm<br>
 			(earns 10-20 golds)
-			<form>
+			<form action="/process_money" method="post">
 				<input type="submit" name="farm_gold" value="Find Gold!">
 			</form>
 		</div>
+		
+
+
+
+
+
 		<div class="box">
 			Cave<br>
 			(earns 5-10 golds)
-			<form>
-				<input type="submit" name="farm_gold" value="Find Gold!">
+			<form action="/process_money">
+				<input type="submit" name="cave_gold" value="Find Gold!">
 			</form>
 		</div>
 		<div class="box">
-			Farm<br>
+			House<br>
 			(earns 2-5 golds)
-			<form>
-				<input type="submit" name="farm_gold" value="Find Gold!">
+			<form action="/process_money">
+				<input type="submit" name="house_gold" value="Find Gold!">
 			</form>
 		</div>
 		<div class="box">
-			Farm<br>
+			Casino<br>
 			(earns/takes 0-50 golds)
-			<form>
-				<input type="submit" name="farm_gold" value="Find Gold!">
+			<form action="/process_money">
+				<input type="submit" name="casino_gold" value="Find Gold!">
 			</form>
 		</div>
 
 		<div>
-			Activities:
+			Activities:<br>
 			<textarea>{{ output }}</textarea>
 		</div>
 
